@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>tinyHeart</title>
+	<script src="js/main.js"></script>
+	<script src="js/commonFunctions.js"></script>
+	<script src="js/background.js"></script>
+	<script src="js/ane.js"></script>
+	<script src="js/fruit.js"></script>
+	<script src="js/bigFish.js"></script>
+	<script src="js/collision.js"></script>
+	<script src="js/smallFish.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/wave.js"></script>
+	<script src="js/halo.js"></script>
+	<script src="js/dust.js"></script>
+	<style>
+		body{
+			padding-top: 10px;
+		}
+		.bg{
+			width: 800px;
+			height: 600px;
+			margin:0 auto;
+		}
+		#allcanvas{
+			position: relative;
+			width: 800px;
+			height: 600px;
+			margin: 0;
+		}
+		#canvas1{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+		#canvas2{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div id="allcanvas">
+			<canvas id="canvas1" width="800" height="600"></canvas>
+			<canvas id="canvas2" width="800" height="600"></canvas>
+		</div>
+	</div>
+	<div>
+		<h1>玩法：</h1>
+		<h3>	利用鼠标操控大鱼四处游动并捕食果实，然后将果实喂食给小鱼。小鱼身上有橙色的生命条，生命条颜色会随着时间慢慢变浅。若在一定时间内小鱼未能进食补充生命能量，那么小鱼将死去，游戏结束。</h3>
+		<h3>游戏中有两种果实：橙色果实和蓝色果实。每一颗橙色果实记分100，而当吃到蓝色果实后，本次喂食得分将翻倍</h3>
+	</div>
+</body>
+</html>
